@@ -91,16 +91,16 @@ function Footer() {
               </div> */}
               <div className='flex items-center gap-5 mb-5  mx-auto lg:mx-0'>
                 <div className='bg-[#ffffff] rounded-full p-2 mr-1'><FaPhoneAlt  color='#223553' size='10' /></div>
-                <a href="tel:062958892" target="_blank"><b className='text-[#ffffff] md:text-xl  font-normal'>預約專線｜06-312-1398</b></a>
+                <a href="tel:063560852" target="_blank"><b className='text-[#ffffff] md:text-xl  font-normal'>預約專線｜06-356-0852</b></a>
               </div>
               <div className='flex items-center gap-5 mb-5  mx-auto lg:mx-0'>
                 <div className='bg-[#ffffff] rounded-full p-2 mr-1'><FaMapMarkerAlt  color='#223553' size='10' /></div>
-                <b className='text-[#ffffff] md:text-xl font-normal'>服務總部｜台南市永康區中華路1-127號</b>
+                <b className='text-[#ffffff] md:text-xl font-normal'>服務總部｜台南市安南區北安路三段。新宅五街口</b>
               </div>
             </div>
 
             <div className="mt-16 lg:mt-20">
-              <iframe width="100%" height="300" className="mb-10" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.681451210094!2d120.23406279999999!3d22.9987385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e76c6cb601963%3A0xd23f79343af30cd8!2zNzEw5Y-w5Y2X5biC5rC45bq35Y2A5Lit6I-v6LevMS0xMjfomZ8!5e0!3m2!1szh-TW!2stw!4v1665585598223!5m2!1szh-TW!2stw" frameBorder="0" allowFullScreen=""/>
+              <iframe width="100%" height="300" className="mb-10" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14684.630797426915!2d120.20305023583794!3d23.054679358987624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e777a162c01c3%3A0x176400e7dafdf77f!2zNzA55Y-w5Y2X5biC5a6J5Y2X5Y2A5paw5a6F!5e0!3m2!1szh-TW!2stw!4v1668077569497!5m2!1szh-TW!2stw" frameBorder="0" allowFullScreen=""/>
             </div>
           </div>
           {/* 表單 */}
