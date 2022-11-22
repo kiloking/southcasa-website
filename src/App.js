@@ -3,6 +3,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
+import Page1 from "./Page1";
+import Page2 from "./Page2";
+import Page3 from "./Page3";
 function App() {
   useEffect(() => {
     setTimeout(function() {
@@ -14,7 +18,11 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <Navbar />
       <Header />
+      <Page1 />
+      <Page2 />
+      <Page3 />
       <Footer />
     </div>
   );
