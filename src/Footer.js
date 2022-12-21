@@ -95,7 +95,7 @@ function Footer() {
               </div>
               <div className='flex items-center gap-5 mb-5  mx-auto lg:mx-0'>
                 <div className='bg-[#ffffff] rounded-full p-2 mr-1'><FaMapMarkerAlt  color='#223553' size='10' /></div>
-                <b className='text-[#ffffff] md:text-xl font-normal'>服務總部｜台南市安南區北安路三段。新宅五街口</b>
+                <b className='text-[#ffffff] md:text-xl font-normal'>服務總部｜安南區北安路三段。新宅五街口</b>
               </div>
             </div>
 
