@@ -3,6 +3,7 @@ import { FaPhoneAlt,FaMapMarkerAlt } from 'react-icons/fa';
 import { useForm, reset } from "react-hook-form";
 import Modal from './Components/Modal';
 function Footer() {
+  const [msgMailTitle,setMsgMailTitle] = useState('詠翠網站的表單')
   const [mailSent, setmailSent] = useState(false);
   const [error, setError] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -120,7 +121,7 @@ function Footer() {
                   <input type="mail" className="block  bg-white   w-full
                       px-3 py-3 " placeholder="電子信箱"   {...register("mail", { required: true})}/>
                 </div>
-
+                <input type="hidden" name="msgMailTitle" value={msgMailTitle}  {...register("msgMailTitle", { required: true})}/>
                 <div className='text-[#fff] leading-9 font-bold text-base w-[90%] mx-auto'>
                   本人已知悉以下個人資料蒐集聲明事項您所登錄的個人資料將作為以下用途：一、本網站所載之相關事項通知 二、客戶管理與服務 三、本公司行銷業務之推廣
                   <div className='flex ai-center jc-center  '>
