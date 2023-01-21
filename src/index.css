@@ -12,3 +12,39 @@
     opacity: 1;
   }
 }
+@keyframes oxxo{
+  from{
+      /* left:0; */
+      transform: translateX(-50px);
+  }
+  to{
+      /* left:100px; */
+      transform: translateX(50px);
+  }
+}
+.swiper-backface-hidden .swiper-slide{
+  margin-bottom: 40px;
+}
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 5px !important;
+}
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #1F3351;
+  opacity: 1;
+  background: #1F3351 !important;
+  transition: all .5s;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #1F3351 !important;
+  width: 45px !important;
+  border-radius: 25px !important;
+}

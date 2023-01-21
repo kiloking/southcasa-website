@@ -1,6 +1,20 @@
-import React from 'react'
-
+import React,{useState} from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from "swiper";
+// Import Swiper styles
+import 'swiper/css';
+import "swiper/css/pagination";
 function Page3() {
+  const [swiper, setSwiper] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0) 
+  const handleClick = (index) =>{
+    swiper.slideTo(index)
+  }
+  const imgs = [
+    {image:"p01.png"},
+    {image:"p02.png"},
+    {image:"p03.png"},
+  ]
   return (
     <div 
       className='bg-cover bg-center bg-fixed'
@@ -11,14 +25,50 @@ function Page3() {
       </div>
       <div className='flex flex-col justify-center items-center gap-10 py-20'>
         <img src={process.env.PUBLIC_URL+'/images/open/page3_pic1.png'} alt="" className='max-w-full w-4/5'/>
-        <img src={process.env.PUBLIC_URL+'/images/open/page3_pic2.png'} alt="" className='max-w-full w-5/6 mt-10'/>
+        <div className='flex mt-10 w-4/5 gap-20 py-20'>
+          <img src={process.env.PUBLIC_URL+'/images/open/page3_pic2_1.png'} alt="" className='max-w-full w-1/2'/>
+          <img src={process.env.PUBLIC_URL+'/images/open/page3_pic2_2.png'} alt="" className='max-w-full w-1/2 '/>
+        </div>
       </div>
       <div>
-        <img src={process.env.PUBLIC_URL+'/images/open/page3_imgs.png'} alt="" className='max-w-full w-full'/>
+      <Swiper
+        onSwiper={setSwiper}
+        spaceBetween={30}
+        slidesPerView={2.5}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }} 
+        modules={[Pagination]}
+        centeredSlides={true}
+ 
+        className="mySwiper"
+        onSlideChange={(swiperCore)=>{
+          const {
+            activeIndex,
+            snapIndex,
+            previousIndex,
+            realIndex,
+          } = swiperCore;
+          console.log({ activeIndex, snapIndex, previousIndex, realIndex });
+          setCurrentIndex(activeIndex)
+        }}
+      >
+        {
+          imgs.map((item,index)=>{
+            return(
+              <SwiperSlide><img src={process.env.PUBLIC_URL+'/images/open/env/'+ item.image} alt="" /></SwiperSlide>
+            )
+          })
+        }
+      </Swiper>
+
+
+
       </div>
       <div className='flex flex-col justify-center items-center gap-10  relative pt-14 pb-20 lg:pb-48'>
         <img src={process.env.PUBLIC_URL+'/images/open/page3_pic3.png'} alt="" className='max-w-full w-4/5'/>
-        <img src={process.env.PUBLIC_URL+'/images/open/page3_pic4.png'} alt="" className='max-w-full w-2/6 absolute bottom-0 right-0'/>
+        <img src={process.env.PUBLIC_URL+'/images/open/page3_pic4_2.png'} alt="" className='max-w-full w-2/6 absolute -top-[40px] left-0'/>
       </div>
       <div className='flex justify-end  '>
         

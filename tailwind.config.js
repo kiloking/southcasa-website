@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        'slide-flow': 'oxxo 3s ease-in-out infinite alternate',
         'pulse-slow': 'pulse 3s linear infinite',
       }
     },
