@@ -25,7 +25,7 @@ function Page3() {
       </div>
       <div className='flex flex-col justify-center items-center gap-10 py-20'>
         <img src={process.env.PUBLIC_URL+'/images/open/page3_pic1.png'} alt="" className='max-w-full w-4/5'/>
-        <div className='flex mt-10 w-4/5 gap-20 py-20'>
+        <div className='flex mt-10 w-4/5 gap-4 md:gap-20 py-5 md:py-20'>
           <img src={process.env.PUBLIC_URL+'/images/open/page3_pic2_1.png'} alt="" className='max-w-full w-1/2'/>
           <img src={process.env.PUBLIC_URL+'/images/open/page3_pic2_2.png'} alt="" className='max-w-full w-1/2 '/>
         </div>
