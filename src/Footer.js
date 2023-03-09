@@ -1,7 +1,8 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { FaPhoneAlt,FaMapMarkerAlt } from 'react-icons/fa';
 import { useForm, reset } from "react-hook-form";
 import Modal from './Components/Modal';
+import taiwan_districts from './Components/taiwan_districts.json'
 function Footer() {
   const [msgMailTitle,setMsgMailTitle] = useState('詠翠網站的表單')
   const [mailSent, setmailSent] = useState(false);
@@ -14,9 +15,12 @@ function Footer() {
       tel: "",
       mail: "",
       house_types:"",
-      area:""
+      area:"",
+      main_district:"",
+      sub_district:"",
     }
   });
+  const [subDistricts , setSubDistricts] = useState(taiwan_districts[0].districts)
   const sendFormStatusModal = ()=>{
     setFormStatus(true)
 
@@ -44,6 +48,17 @@ function Footer() {
 
 
   };
+  const handleChange = (e)=>{
+    console.log(e.target.value)
+    let cityName = e.target.value
+    const result = taiwan_districts.find(item =>{
+      return item.name === cityName
+    })
+    setSubDistricts(result.districts)
+
+  }
+
+
   return (
     <div className='w-full py-10 bg-[#223553]'>
       {formStatus &&
@@ -109,6 +124,7 @@ function Footer() {
             <div className='text-[#ffffff] text-2xl font-bold  text-center mb-5  lg:text-left-left'>線上預約</div>
             <div className='h-[2px] bg-[#ffffff] w-full my-3'></div>
             <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-10  rel" data-aos="fade-up" data-aos-duration="1500" >
+              <div className='flex gap-3'>
                 <div className='w-full  my-5 '>
                   <input type="text" className="block  bg-white  w-full
                       px-3 py-3 " placeholder="姓名"   {...register("name", { required: true})}/>
@@ -117,6 +133,36 @@ function Footer() {
                   <input type="text" className="block  bg-white  w-full 
                       px-3 py-3 " placeholder="聯絡電話"    {...register("tel", { required: true})}/>
                 </div>
+              </div>
+              <div className='flex gap-3'>
+                <div className='w-full  '>
+                  <select className="block  bg-white  w-full px-3 py-3 "  {...register("main_district", { required: true})} onChange={(e)=>{
+                    handleChange(e)
+                  }}>
+                    <option defaultValue value="">居住縣市</option>
+                    {
+                      taiwan_districts.map((item,index)=>{
+                        return(
+                          <option value={item.name} key={item.name}>{item.name}</option>
+                        )
+                      })
+                    }
+                  </select>
+                </div>
+                <div className='w-full  '>
+                  <select className="block  bg-white  w-full px-3 py-3"  {...register("sub_district", { required: true})}>
+                    <option defaultValue value="">居住地區</option>
+                    {
+                      subDistricts.map((item,index)=>{
+                        return(
+                          <option value={item.name} key={item.name+index}>{item.name}</option>
+                        )
+                      })
+                    }
+                  </select>
+                </div>
+              </div>
+
                 <div className='w-full my-5  '>
                   <input type="mail" className="block  bg-white   w-full
                       px-3 py-3 " placeholder="電子信箱"   {...register("mail", { required: true})}/>
