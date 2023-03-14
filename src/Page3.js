@@ -25,9 +25,15 @@ function Page3() {
       </div>
       <div className='flex flex-col justify-center items-center gap-10 pt-20'>
         <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic1.png'} alt="" className='max-w-full w-10/12'/>
-        <div className='flex mt-10 w-4/5 gap-4 md:gap-20 pt-5 md:pt-20'>
-          <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic2_1.png'} alt="" className='max-w-full w-1/2 mb-10 md:mb-20'/>
-          <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic2_2.png'} alt="" className='max-w-full w-1/2 '/>
+        <div className='flex mt-10 w-4/5 gap-4 md:gap-10 pt-5 md:pt-20 items-end justify-center'>
+          <div className='w-2/5 mb-10 md:mb-20'>
+            <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic2_1.png'} alt="" className='max-w-full'/>
+          </div>
+          <div className='w-3/5'>
+            <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic2_2.png'} alt="" className='max-w-full  '/>
+          </div>
+          
+
         </div>
       </div>
       <div>

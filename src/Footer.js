@@ -111,12 +111,12 @@ function Footer() {
               </div>
               <div className='flex items-center gap-5 mb-5  mx-auto lg:mx-0'>
                 <div className='bg-[#ffffff] rounded-full p-2 mr-1'><FaMapMarkerAlt  color='#223553' size='10' /></div>
-                <b className='text-[#ffffff] md:text-xl font-normal'>服務總部｜安南區北安路三段。新宅五街口</b>
+                <b className='text-[#ffffff] md:text-xl font-normal'>接待會館｜台南市安南區北安路三段。新宅五街口</b>
               </div>
             </div>
 
             <div className="mt-16 lg:mt-20">
-              <iframe width="100%" height="300" className="mb-10" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14684.630797426915!2d120.20305023583794!3d23.054679358987624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e777a162c01c3%3A0x176400e7dafdf77f!2zNzA55Y-w5Y2X5biC5a6J5Y2X5Y2A5paw5a6F!5e0!3m2!1szh-TW!2stw!4v1668077569497!5m2!1szh-TW!2stw" frameBorder="0" allowFullScreen=""/>
+              <iframe width="100%" height="300" className="mb-10" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3671.1184124641386!2d120.20706131496836!3d23.056119984936135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDAzJzIyLjAiTiAxMjDCsDEyJzMzLjMiRQ!5e0!3m2!1szh-TW!2stw!4v1678787681602!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           {/* 表單 */}

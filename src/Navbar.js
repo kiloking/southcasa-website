@@ -2,8 +2,8 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className='py-4 bg-[#e4e4e4ab] shadow-md  fixed w-full top-0 z-50 pr-3'>
-      <img src={process.env.PUBLIC_URL+'/images/open/navbar_logo.png'} alt="" className=' absolute top-0 left-1/2 transform -translate-x-1/2  max-w-full w-[80px] lg:w-[110px] ' />
+    <div className='py-4 bg-[#e4e4e400] absolute w-full top-0 z-50 pr-3'>
+      <img src={process.env.PUBLIC_URL+'/images/open/navbar_logo.png'} alt="" className=' absolute top-0 left-1/2 transform -translate-x-1/2  max-w-full w-[80px] lg:w-[110px] hidden' />
       <div className='flex gap-5 justify-start items-end ml-6'>
         <a href="https://www.facebook.com/"  target="_blank" rel="noreferrer">
           <div className='flex flex-col items-center justify-end gap-2 '>
