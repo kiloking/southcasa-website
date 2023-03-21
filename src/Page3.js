@@ -24,12 +24,12 @@ function Page3() {
         <img src={process.env.PUBLIC_URL+'/images/open/page3_title.png'} alt="" className='max-w-full w-1/5'/>
       </div>
       <div className='flex flex-col justify-center items-center gap-10 pt-20'>
-        <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic1.png'} alt="" className='max-w-full w-10/12'/>
+        <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic1.png'} alt="" className='max-w-full w-10/12' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00"/>
         <div className='flex mt-10 w-4/5 gap-4 md:gap-10 pt-5 md:pt-20 items-end justify-center'>
-          <div className='w-2/5 mb-10 md:mb-20'>
+          <div className='w-2/5 mb-10 md:mb-20' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00">
             <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic2_1.png'} alt="" className='max-w-full'/>
           </div>
-          <div className='w-3/5'>
+          <div className='w-3/5' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic2_2.png'} alt="" className='max-w-full  '/>
           </div>
           
@@ -73,8 +73,8 @@ function Page3() {
 
       </div>
       <div className='flex flex-col justify-center items-center gap-10  relative pt-14 pb-20 lg:pb-48'>
-        <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic3.png'} alt="" className='max-w-full w-4/5'/>
-        <img src={process.env.PUBLIC_URL+'/images/open/page3_pic4_2.png'} alt="" className='max-w-full w-2/6 absolute -top-[40px] left-0'/>
+        <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic3.png'} alt="" className='max-w-full w-4/5' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"/>
+        <img src={process.env.PUBLIC_URL+'/images/open/page3_pic4_2.png'} alt="" className='max-w-full w-2/6 absolute -top-[40px] left-0' data-aos="fade" data-aos-duration="1000" data-aos-delay="00"/>
       </div>
       <div className='flex justify-end  '>
         

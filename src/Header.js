@@ -16,7 +16,7 @@ function Header() {
 
       <div
         className='inset-0 min-h-full z-0  hidden lg:block origin-center'
-        data-aos="fade" data-aos-duration="1500"
+        
       >
         <img src={process.env.PUBLIC_URL+'/images/open/page_bg.png'} alt="" className='w-full'/> 
       </div>
@@ -35,12 +35,12 @@ function Header() {
         </div>
       </div>
       <div className=' absolute bottom-0 h-[10vh] md:h-[20vh] lg:h-[100vh] w-full '>
-        <div className='w-1/2 absolute bottom-0'>  
+        <div className='w-1/2 absolute bottom-0' data-aos="fade" data-aos-duration="1000" data-aos-delay="200">  
           <img src={process.env.PUBLIC_URL+'/images/open_v2/header_c01.png'} alt="" className='max-w-full'/> 
         </div>
       </div>
       <div className='flex justify-end items-center absolute w-full h-full top-0 md:pt-20'>
-        <div className='w-10/12 mx-auto md:mx-0 md:w-1/2'   data-aos="fade" data-aos-duration="1500">
+        <div className='w-10/12 mx-auto md:mx-0 md:w-1/2'   data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <img src={process.env.PUBLIC_URL+'/images/open_v2/header_title.png'} alt="" className='max-w-full w-4/5 mx-auto'/>
         </div>
         

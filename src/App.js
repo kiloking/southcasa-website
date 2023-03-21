@@ -17,7 +17,7 @@ function App() {
     // AOS.refresh()
   }, []);
   return (
-    <div className="App">
+    <div className="App bg-[#0F8F9D]">
       <Navbar />
       <Header />
       <Page1 />
