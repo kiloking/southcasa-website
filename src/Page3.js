@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 function Page3() {
   const [swiper, setSwiper] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0) 
+  const [imgSrc , setImgSrc] = useState('page3_pic2_p01.png')
   const handleClick = (index) =>{
     swiper.slideTo(index)
   }
@@ -15,6 +16,7 @@ function Page3() {
     {image:"p02.png"},
     {image:"p03.png"},
   ]
+
   return (
     <div 
       className='bg-cover bg-center bg-fixed'
@@ -25,12 +27,21 @@ function Page3() {
       </div>
       <div className='flex flex-col justify-center items-center gap-10 pt-20'>
         <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic1.png'} alt="" className='max-w-full w-10/12' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00"/>
-        <div className='flex mt-10 w-4/5 gap-4 md:gap-10 pt-5 md:pt-20 items-end justify-center'>
-          <div className='w-2/5 mb-10 md:mb-20' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00">
+        <div className='flex mt-10 mb-10 w-4/5 gap-4 md:gap-0 pt-5 md:pt-20 items-end justify-center'>
+          <div className='w-2/5 mb-10 ' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00">
             <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic2_1.png'} alt="" className='max-w-full'/>
           </div>
           <div className='w-3/5' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <img src={process.env.PUBLIC_URL+'/images/open_v2/page3_pic2_2.png'} alt="" className='max-w-full  '/>
+            <img src={process.env.PUBLIC_URL+'/images/open_v2/'+imgSrc} alt="" className='max-w-full  '/>
+            <div className='flex justify-between items-center mt-2'>
+              <div className='flex text-md tracking-wider'>3D外觀示意圖</div>
+              <div className='flex gap-2'>
+                <div className={'w-12 h-4 bg-[#1F3351] rounded-full cursor-pointer transition ' + (imgSrc === 'page3_pic2_p01.png' ? ' opacity-100' : 'opacity-50')} 
+                    onClick={()=>setImgSrc('page3_pic2_p01.png')}></div>
+                <div className={'w-12 h-4 bg-[#1F3351] rounded-full cursor-pointer transition ' + (imgSrc === 'page3_pic2_p02.png' ? ' opacity-100' : 'opacity-50')}
+                    onClick={()=>setImgSrc('page3_pic2_p02.png')}></div>
+              </div>
+            </div>
           </div>
           
 
