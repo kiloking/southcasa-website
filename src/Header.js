@@ -7,7 +7,7 @@ function Header() {
       
     >
       <div className='w-full'>
-        <img src={process.env.PUBLIC_URL+'/images/open_v3/header_bg.png'} alt="" className='w-full '/>
+        <img src={process.env.PUBLIC_URL+'/images/open_v3/header_bg-2.jpg'} alt="" className='w-full '/>
       </div>
 
      
